@@ -1,0 +1,157 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html {
+    background: linear-gradient(to right,rgb(223, 224, 235) ,  aliceblue);
+}
+
+CSS
+.color-1 {color: #000000;}
+.color-2 {color: #ffffff;}
+.color-3 {color: #e6cb66;}
+.color-4 {color: #ac4444;}
+.color-5 {color: #666d56;}
+.color-6 {color: #2596be;}
+
+.color-1 {color: #c3a171;}
+.color-2 {color: #006400;}
+.color-3 {color: #bc8f8f;}
+.color-4 {color: #191970;}
+.color-5 {color: #000000;}
+.color-6 {color: #ffffff;}
+
+
+.navigation {
+    background: linear-gradient(to right, darkviolet, rgb(255, 0, 234));
+    color:aliceblue;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    /* line-height: 40px; */
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.titlename {
+    color: aliceblue;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 4rem;
+
+}
+
+.nav-cont{
+    display:flex;
+    align-items: flex-end;
+    flex-shrink: 0;
+}
+
+.nav-link {
+    color: aliceblue;
+    text-decoration: none;
+    padding-right: 10px; 
+    text-align: center;
+        
+}
+
+.nav-link:hover {
+    color:rgb(224, 197, 235)
+}
+
+
+.main {
+    /* background-color: aliceblue; */
+    background: linear-gradient(to right,rgb(223, 224, 235) ,  aliceblue);
+    /* width: 100pv; */
+    /* height: 720px; */
+    display: flex;
+    padding-top: 5em;
+    /*This is for horizontal  */
+    justify-content: space-evenly; 
+    /*This is for vertical */
+    align-items: center;
+}
+
+
+
+.content {
+    background-color: #F700FF;
+    background: linear-gradient(45deg, #faa6fd, #F700FF,  #F700FF);
+     /* blueviolet; */
+    width: 40em;
+    height: 40em;
+    border-radius: 50%;
+    flex-shrink: 0;
+    
+    /* line-height: 30vw;
+    text-align: center; */
+}
+
+
+.pigs{
+    color: aliceblue;
+    width: 30vw;
+    height: 25em;
+    display: flex;
+    flex-direction: column; /*this inverts the justify and align */
+    justify-content: space-between;
+}
+
+.child1, .child2, .child3 {
+    color: blueviolet;
+    background-color: #fad3fc;
+    padding: 10px;
+    /* height: 10rem; */
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 1.2em;
+    border: blueviolet solid;
+    border-width: 5px;
+}
+
+
+@media only screen and (min-width: 450px ) and (max-width: 850px){
+    .navigation {
+        font-size: 20px;
+    }
+
+    .main {
+        flex-direction: column;
+        height: 1200px;
+    }
+
+    .content {
+       font-size: 10px;
+       margin:10px;
+    }
+    .pigs{
+        width: 30em;
+    }
+
+}
+
+@media only screen and (max-width: 450px){
+    .navigation {
+        font-size: 10px;
+    }
+    .titlename {
+        font-size: 2em;
+    }
+
+    .main {
+        flex-direction: column;
+        height: 1000px;
+    }
+
+    .content {
+       font-size: 10px;
+       margin:10px;
+    }
+    .pigs{
+        width: 20em;
+    }
+
+}
