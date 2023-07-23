@@ -1,3 +1,16 @@
+:root {
+    /* CSS HEX */
+    --raw-umber: #956C54ff;
+    --persian-red: #CC312Fff;
+    --pale-dogwood: #E2C8C0ff;
+    --seasalt: #F7FAF9ff;
+    --caput-mortuum: #5F3A2Bff;
+
+    /* option2 */
+    --verdigris: #6BB8B0ff;
+    --jet: #31302Fff;
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -22,6 +35,10 @@ CSS
 .color-4 {color: #191970;}
 .color-5 {color: #000000;}
 .color-6 {color: #ffffff;}
+
+
+
+
 
 /* Naviagation bar section */
 .navigation {
