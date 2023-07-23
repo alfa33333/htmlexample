@@ -7,6 +7,8 @@
     --caput-mortuum: #5F3A2Bff;
 
     /* option2 */
+    --light-cyan: #CAE4E3ff;
+    --tiffany-blue: #74CFCBff;
     --verdigris: #6BB8B0ff;
     --jet: #31302Fff;
 }
@@ -18,7 +20,8 @@
 }
 
 html {
-    background: linear-gradient(to right,rgb(223, 224, 235) ,  aliceblue);
+    /* background: linear-gradient(to right,rgb(223, 224, 235) ,  aliceblue); */
+    background: var(--tiffany-blue);
 }
 
 CSS
@@ -42,8 +45,10 @@ CSS
 
 /* Naviagation bar section */
 .navigation {
-    background: linear-gradient(to right, darkviolet, rgb(255, 0, 234));
-    color:aliceblue;
+    /* background: linear-gradient(to right, darkviolet, rgb(255, 0, 234)); */
+    background: var(--persian-red);
+    /* color:aliceblue; */
+    color: var(--seasalt);
     height: 5rem;
     display: flex;
     justify-content: space-between;
@@ -53,7 +58,8 @@ CSS
 }
 
 .titlename {
-    color: aliceblue;
+    /* color: aliceblue; */
+    color: var(--seasalt);
     text-align: left;
     padding-left: 10px;
     font-size: 4rem;
@@ -67,7 +73,8 @@ CSS
 }
 
 .nav-link {
-    color: aliceblue;
+    /* color: aliceblue; */
+    color: var(--seasalt);
     text-decoration: none;
     padding-right: 10px; 
     text-align: center;
@@ -75,7 +82,8 @@ CSS
 }
 
 .nav-link:hover {
-    color:rgb(224, 197, 235)
+    /* color:rgb(224, 197, 235) */
+    color: var(--pale-dogwood);
 }
 
 .menu-icon {
@@ -88,7 +96,8 @@ CSS
 /**********************/
 .main {
     /* background-color: aliceblue; */
-    background: linear-gradient(to right,rgb(223, 224, 235) ,  aliceblue);
+    /* background: linear-gradient(to right,rgb(223, 224, 235) ,  aliceblue); */
+    background-color: var(--tiffany-blue);
     /* width: 100pv; */
     /* height: 720px; */
     display: flex;
@@ -124,16 +133,20 @@ CSS
 }
 
 .child1, .child2, .child3 {
-    color: blueviolet;
-    background-color: #fad3fc;
+    /* color: blueviolet; */
+    color: var(--jet);
+    /* background-color: #fad3fc; */
+    background-color:var(--light-cyan);
     padding: 10px;
     /* height: 10rem; */
     font-weight: bold;
     border-radius: 10px;
     font-size: 1.2em;
-    border: blueviolet solid;
+    /* border: blueviolet solid; */
+    border: var(--seasalt) solid;
     border-width: 5px;
-    box-shadow: 5px 5px #F700FF;
+    /* box-shadow: 5px 5px #F700FF; */
+    box-shadow: 5px 5px var(--persian-red)
 }
 
 
@@ -197,14 +210,17 @@ input[type="checkbox"] {
     } */
 
     .nav-link {
-        background-color: #F700FF;
+        /* background-color: #F700FF; */
+        background-color: var(--persian-red);
         text-align: center;
         padding: 0;
         flex: 1;
-        width: 100%;
-        border: #fad3fc solid 1px;
+        width: 95%;
+        /* border: #fad3fc solid 1px; */
+        margin: 1px;
         border-radius: 10px;
-        box-shadow: inset -3px -2px darkviolet;
+        /* box-shadow: inset -3px -2px darkviolet; */
+        box-shadow: inset -3px -3px var(--jet);
     }
 
     .titlename {
