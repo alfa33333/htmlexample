@@ -23,7 +23,7 @@ CSS
 .color-5 {color: #000000;}
 .color-6 {color: #ffffff;}
 
-
+/* Naviagation bar section */
 .navigation {
     background: linear-gradient(to right, darkviolet, rgb(255, 0, 234));
     color:aliceblue;
@@ -61,7 +61,14 @@ CSS
     color:rgb(224, 197, 235)
 }
 
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+  }
 
+/**********************/
 .main {
     /* background-color: aliceblue; */
     background: linear-gradient(to right,rgb(223, 224, 235) ,  aliceblue);
@@ -90,7 +97,6 @@ CSS
     text-align: center; */
 }
 
-
 .pigs{
     color: aliceblue;
     width: 30vw;
@@ -110,6 +116,7 @@ CSS
     font-size: 1.2em;
     border: blueviolet solid;
     border-width: 5px;
+    box-shadow: 5px 5px #F700FF;
 }
 
 
@@ -133,14 +140,64 @@ CSS
 
 }
 
-@media only screen and (max-width: 450px){
+input[type="checkbox"] {
+    display: none; /* Hide the checkbox that will control the menu state */
+}
+
+@media only screen and (max-width: 425px){
+    .nav-cont {
+        display:none;
+    }
+
+    .menu-icon {
+        display: flex; /* Display the menu icon on smaller screens */
+        align-items: center;
+    }
+    
+
+
+    input[type="checkbox"]:checked ~ .nav-cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        font-size: 16px;
+        top: 5em;
+        left: 0;
+        width: 100%;
+        
+        
+    }
+
     .navigation {
         font-size: 10px;
     }
-    .titlename {
-        font-size: 2em;
+
+    /* .nav-cont {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    } */
+
+    .nav-link {
+        background-color: #F700FF;
+        text-align: center;
+        padding: 0;
+        flex: 1;
+        width: 100%;
+        border: #fad3fc solid 1px;
+        border-radius: 10px;
+        box-shadow: inset -3px -2px darkviolet;
     }
 
+    .titlename {
+        display: flex;
+        font-size: 2em;
+        justify-content: center; /* Center the flex items horizontally */
+        align-items: center; /* Center the flex items vertically */
+    }
+
+        /*  */
     .main {
         flex-direction: column;
         height: 1000px;
@@ -149,9 +206,12 @@ CSS
     .content {
        font-size: 10px;
        margin:10px;
+       width: 30em;
+       height: 30em;
     }
     .pigs{
         width: 20em;
+        gap: 10px;
     }
 
 }
